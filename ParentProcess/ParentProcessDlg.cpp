@@ -37,7 +37,7 @@ void ParentProcessDlg::Cls_OnCommand(HWND hwnd, int id, HWND hwndCtl, UINT codeN
 {
 	if(IDC_BUTTON1 == id)
 	{
-		CreateSemaphore(NULL, 1, 3, TEXT("{2525FD5F-12E6-47c0-838A-7C5CA1EBD169}"));
+		CreateEvent(NULL, TRUE, TRUE, TEXT("{A59FBCB4-154E-49E6-B0C90AB3A60942D7}") );
 		STARTUPINFO st = {sizeof(st)};
 		PROCESS_INFORMATION pr;
 		TCHAR filename[20];
